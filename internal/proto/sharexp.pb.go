@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.10
 // 	protoc        v3.21.12
-// source: internal/proto/sharexp.proto
+// source: proto/sharexp.proto
 
 package proto
 
@@ -32,7 +32,7 @@ type TextUpdate struct {
 
 func (x *TextUpdate) Reset() {
 	*x = TextUpdate{}
-	mi := &file_internal_proto_sharexp_proto_msgTypes[0]
+	mi := &file_proto_sharexp_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -44,7 +44,7 @@ func (x *TextUpdate) String() string {
 func (*TextUpdate) ProtoMessage() {}
 
 func (x *TextUpdate) ProtoReflect() protoreflect.Message {
-	mi := &file_internal_proto_sharexp_proto_msgTypes[0]
+	mi := &file_proto_sharexp_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -57,7 +57,7 @@ func (x *TextUpdate) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TextUpdate.ProtoReflect.Descriptor instead.
 func (*TextUpdate) Descriptor() ([]byte, []int) {
-	return file_internal_proto_sharexp_proto_rawDescGZIP(), []int{0}
+	return file_proto_sharexp_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *TextUpdate) GetClientId() string {
@@ -84,7 +84,7 @@ type Ack struct {
 
 func (x *Ack) Reset() {
 	*x = Ack{}
-	mi := &file_internal_proto_sharexp_proto_msgTypes[1]
+	mi := &file_proto_sharexp_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -96,7 +96,7 @@ func (x *Ack) String() string {
 func (*Ack) ProtoMessage() {}
 
 func (x *Ack) ProtoReflect() protoreflect.Message {
-	mi := &file_internal_proto_sharexp_proto_msgTypes[1]
+	mi := &file_proto_sharexp_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -109,7 +109,7 @@ func (x *Ack) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Ack.ProtoReflect.Descriptor instead.
 func (*Ack) Descriptor() ([]byte, []int) {
-	return file_internal_proto_sharexp_proto_rawDescGZIP(), []int{1}
+	return file_proto_sharexp_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *Ack) GetOk() bool {
@@ -128,7 +128,7 @@ type Empty struct {
 
 func (x *Empty) Reset() {
 	*x = Empty{}
-	mi := &file_internal_proto_sharexp_proto_msgTypes[2]
+	mi := &file_proto_sharexp_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -140,7 +140,7 @@ func (x *Empty) String() string {
 func (*Empty) ProtoMessage() {}
 
 func (x *Empty) ProtoReflect() protoreflect.Message {
-	mi := &file_internal_proto_sharexp_proto_msgTypes[2]
+	mi := &file_proto_sharexp_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -153,14 +153,14 @@ func (x *Empty) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Empty.ProtoReflect.Descriptor instead.
 func (*Empty) Descriptor() ([]byte, []int) {
-	return file_internal_proto_sharexp_proto_rawDescGZIP(), []int{2}
+	return file_proto_sharexp_proto_rawDescGZIP(), []int{2}
 }
 
-var File_internal_proto_sharexp_proto protoreflect.FileDescriptor
+var File_proto_sharexp_proto protoreflect.FileDescriptor
 
-const file_internal_proto_sharexp_proto_rawDesc = "" +
+const file_proto_sharexp_proto_rawDesc = "" +
 	"\n" +
-	"\x1cinternal/proto/sharexp.proto\x12\asharexp\"C\n" +
+	"\x13proto/sharexp.proto\x12\asharexp\"C\n" +
 	"\n" +
 	"TextUpdate\x12\x1b\n" +
 	"\tclient_id\x18\x01 \x01(\tR\bclientId\x12\x18\n" +
@@ -174,24 +174,24 @@ const file_internal_proto_sharexp_proto_rawDesc = "" +
 	"\rStreamUpdates\x12\x0e.sharexp.Empty\x1a\x13.sharexp.TextUpdate0\x01B+Z)github.com/rouzitalab/sharexp/proto;protob\x06proto3"
 
 var (
-	file_internal_proto_sharexp_proto_rawDescOnce sync.Once
-	file_internal_proto_sharexp_proto_rawDescData []byte
+	file_proto_sharexp_proto_rawDescOnce sync.Once
+	file_proto_sharexp_proto_rawDescData []byte
 )
 
-func file_internal_proto_sharexp_proto_rawDescGZIP() []byte {
-	file_internal_proto_sharexp_proto_rawDescOnce.Do(func() {
-		file_internal_proto_sharexp_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_internal_proto_sharexp_proto_rawDesc), len(file_internal_proto_sharexp_proto_rawDesc)))
+func file_proto_sharexp_proto_rawDescGZIP() []byte {
+	file_proto_sharexp_proto_rawDescOnce.Do(func() {
+		file_proto_sharexp_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_proto_sharexp_proto_rawDesc), len(file_proto_sharexp_proto_rawDesc)))
 	})
-	return file_internal_proto_sharexp_proto_rawDescData
+	return file_proto_sharexp_proto_rawDescData
 }
 
-var file_internal_proto_sharexp_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
-var file_internal_proto_sharexp_proto_goTypes = []any{
+var file_proto_sharexp_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
+var file_proto_sharexp_proto_goTypes = []any{
 	(*TextUpdate)(nil), // 0: sharexp.TextUpdate
 	(*Ack)(nil),        // 1: sharexp.Ack
 	(*Empty)(nil),      // 2: sharexp.Empty
 }
-var file_internal_proto_sharexp_proto_depIdxs = []int32{
+var file_proto_sharexp_proto_depIdxs = []int32{
 	0, // 0: sharexp.SyncService.SendUpdate:input_type -> sharexp.TextUpdate
 	2, // 1: sharexp.SyncService.StreamUpdates:input_type -> sharexp.Empty
 	1, // 2: sharexp.SyncService.SendUpdate:output_type -> sharexp.Ack
@@ -203,26 +203,26 @@ var file_internal_proto_sharexp_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_internal_proto_sharexp_proto_init() }
-func file_internal_proto_sharexp_proto_init() {
-	if File_internal_proto_sharexp_proto != nil {
+func init() { file_proto_sharexp_proto_init() }
+func file_proto_sharexp_proto_init() {
+	if File_proto_sharexp_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_internal_proto_sharexp_proto_rawDesc), len(file_internal_proto_sharexp_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_proto_sharexp_proto_rawDesc), len(file_proto_sharexp_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   3,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_internal_proto_sharexp_proto_goTypes,
-		DependencyIndexes: file_internal_proto_sharexp_proto_depIdxs,
-		MessageInfos:      file_internal_proto_sharexp_proto_msgTypes,
+		GoTypes:           file_proto_sharexp_proto_goTypes,
+		DependencyIndexes: file_proto_sharexp_proto_depIdxs,
+		MessageInfos:      file_proto_sharexp_proto_msgTypes,
 	}.Build()
-	File_internal_proto_sharexp_proto = out.File
-	file_internal_proto_sharexp_proto_goTypes = nil
-	file_internal_proto_sharexp_proto_depIdxs = nil
+	File_proto_sharexp_proto = out.File
+	file_proto_sharexp_proto_goTypes = nil
+	file_proto_sharexp_proto_depIdxs = nil
 }
