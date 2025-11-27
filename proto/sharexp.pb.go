@@ -171,7 +171,7 @@ const file_proto_sharexp_proto_rawDesc = "" +
 	"\vSyncService\x12/\n" +
 	"\n" +
 	"SendUpdate\x12\x13.sharexp.TextUpdate\x1a\f.sharexp.Ack\x126\n" +
-	"\rStreamUpdates\x12\x0e.sharexp.Empty\x1a\x13.sharexp.TextUpdate0\x01B\x15Z\x13sharexp/proto;protob\x06proto3"
+	"\rStreamUpdates\x12\x0e.sharexp.Empty\x1a\x13.sharexp.TextUpdate0\x01B+Z)github.com/rouzitalab/sharexp/proto;protob\x06proto3"
 
 var (
 	file_proto_sharexp_proto_rawDescOnce sync.Once

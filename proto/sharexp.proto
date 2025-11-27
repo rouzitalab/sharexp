@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package sharexp;
 
-option go_package = "sharexp/proto;proto";
+option go_package = "github.com/rouzitalab/sharexp/proto;proto";
 
 // Message sent when text changes
 message TextUpdate {
