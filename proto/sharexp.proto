@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package sharexp;
+
+option go_package = "sharexp/proto;proto";
+
+// Message sent when text changes
+message TextUpdate {
+  string client_id = 1;
+  string content = 2;
+}
+
+// Acknowledgement for SendUpdate RPC
+message Ack {
+  bool ok = 1;
+}
+
+// Empty message
+message Empty {}
+
+// RPC Service
+service SyncService {
+  // Browser -> Server
+  rpc SendUpdate(TextUpdate) returns (Ack);
+
+  // Server -> Browser (stream)
+  rpc StreamUpdates(Empty) returns (stream TextUpdate);
+}
