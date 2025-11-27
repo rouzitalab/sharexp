@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             v3.21.12
-// source: proto/sharexp.proto
+// source: sharexp.proto
 
 package proto
 
@@ -167,5 +167,5 @@ var SyncService_ServiceDesc = grpc.ServiceDesc{
 			ServerStreams: true,
 		},
 	},
-	Metadata: "proto/sharexp.proto",
+	Metadata: "sharexp.proto",
 }
